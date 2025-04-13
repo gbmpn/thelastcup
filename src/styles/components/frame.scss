@@ -10,6 +10,7 @@
   text-transform: uppercase;
   grid-template-columns: auto 1fr;
   grid-template-areas: 'back back' 'github archive' 'tags tags' 'sponsor sponsor';
+  display: none;;
 }
 
 .frame #cdawrap {

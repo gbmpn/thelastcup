@@ -21,6 +21,9 @@ section {
   position: relative;
   text-align: center;
   padding-top: 35dvh;
+  .logo {
+    margin-bottom: 42px;
+  }
   h2 {
     cursor: default;
     display: flex;
