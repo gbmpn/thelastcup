@@ -18,3 +18,40 @@
     margin-top: 10px;
   }
 }
+
+@media screen and (max-width: 53em) {
+  .section {
+    margin: 60px auto;
+  }
+
+  .section-centered {
+    gap: 60px;
+  }
+  #section-centered .media-container:nth-child(2),
+  #section-centered .media-container:first-child {
+    width: 100% !important;
+  }
+  #section-0,
+  #section-1,
+  #list-section {
+    flex-direction: column;
+    .media-container {
+      width: 100% !important;
+      .media {
+        height: auto !important;
+      }
+    }
+    ul {
+      margin-right: 0 !important;  }
+  }
+
+  #section-4 .contact * {
+    font-size: 8vw;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
