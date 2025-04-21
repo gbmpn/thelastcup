@@ -37,6 +37,46 @@ body {
   }
 }
 
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  * {
+    font-family: $font-sans !important;
+    text-align: left !important;
+  }
+  ul {
+    // margin-left: 13px;
+
+    li {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 10px;
+      position: relative; 
+      padding-left: 20px;
+      list-style: none;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+      } 
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
 @keyframes zoomOutLogo {
   0% {
     transform: translateY(-50%) scale(3);
